@@ -1,5 +1,108 @@
-.app-header{
-    width: 100%;
-    height: 100px;
-    background: black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1500px;
+  width: 90%;
+  margin: auto;
+}
+img {
+  vertical-align: middle;
+}
+.app_header {
+  display: grid;
+  grid-template-columns: 120px 100px auto 120px 100px 100px;
+  gap: 2px;
+  align-items: center;
+  background: #131921;
+  color: #fff;
+  padding: 8px 10px;
+}
+.app_header .logo img {
+  width: 120px;
+}
+.app_header p {
+  font-size: 13px;
+}
+.app_header p strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+}
+.app_header a {
+  color: #fff;
+  border: solid 1px transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 100ms ease;
+}
+.app_header a:hover {
+  border: solid 1px #fff;
+  border-radius: 3px;
+}
+.app_header .search_box form {
+  display: grid;
+  grid-template-columns: auto 50px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.app_header .search_box input[type="search"] {
+  width: 100%;
+  padding: 13px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.app_header .search_box button {
+  width: 100%;
+  padding: 10px;
+  text-indent: -200px;
+  cursor: pointer;
+  background: #f3a847;
+}
+.app_header .search_box button:hover {
+  background: #db953a;
+}
+.app_header .search_box button svg {
+  float: left;
+  margin-left: 3px;
+}
+
+.app_header .location svg {
+  font-size: 18px;
+  vertical-align: text-top;
+  margin-left: -18px;
+}
+.app_header .cart .count svg {
+  font-size: 36px;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.react-slideshow-container .default-nav {
+  background: transparent !important;
 }
